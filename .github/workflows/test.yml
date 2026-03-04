@@ -46,6 +46,30 @@ jobs:
             echo "MY_PASSWORD is configured"
           fi
 
+          if [ -z "$ACC_SID" ]; then
+            echo "ACC_SID secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "ACC_SID is configured"
+          fi
+
+          if [ -z "$AUTH_TOKEN" ]; then
+            echo "AUTH_TOKEN secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "AUTH_TOKEN is configured"
+          fi
+
+          if [ -z "$OWM_API_KEY" ]; then
+            echo "OWM_API_KEY secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "OWM_API_KEY is configured"
+          fi
+          
           echo ""
           echo "All secrets are configured!"
 
