@@ -62,8 +62,8 @@ jobs:
             echo "AUTH_TOKEN is configured"
           fi
 
-          if [ -z "$OWM_API_KEY" ]; then
-            echo "OWM_API_KEY secret is not set!"
+          if [ -z "$API_KEY" ]; then
+            echo "API_KEY secret is not set!"
             echo "Go to Settings > Secrets > Actions and add it."
             exit 1
           else
