@@ -32,7 +32,7 @@ if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
         from_='whatsapp:+14155238886',
-        content_sid='HX3e73c0a6db6fa4e840bd1466d9555a3f',
+        content_sid='HX612f9001845268c94ae17fbbd2ac91a4',
         to='whatsapp:+639192802432'
     )
     print(message.status)
